@@ -1,0 +1,748 @@
+.Project_section {
+  border: 1px solid #00000000;
+  height: 1100px;
+  /* background-color: #313131; */
+  color: #ffe600;
+  position: relative;
+}
+
+.Project{
+  margin: 10px auto auto 50px;
+}
+
+.Project_heading {
+  width: 1100px;
+  margin: 100px auto;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.Project_box {
+  width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 20px;
+  grid-column: auto;
+}
+
+.box {
+  margin: auto;
+  margin-top: 5px;
+  width: 650px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.8s;
+  border: 3px solid #ffee06;
+}
+
+.box a img:hover {
+  background-color: black;
+  opacity: 0.2;
+  transform: scale(20deg);
+}
+
+.box a > img {
+  width: inherit;
+  height: 400px;
+
+}
+
+/* 스와이퍼 영역 */
+.swiper {
+  width: 900px;
+  height: 600px;
+  background: #000;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 3rem;
+  width: 1000px;
+  border-radius: 30px;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.swiper-slide{
+}
+
+/* 스와이퍼 텍스트 */
+.swiper_text{
+  position: absolute;
+  top: 100px;
+  color: black;
+  width: 300px;
+  text-align: center;
+  line-height: 3;
+  color: white;
+  z-index: 1;
+}
+
+.swiper_text::after{
+  content: '';
+  background-color: #00000079;
+  width: 100%;
+  position: absolute;
+  height: 500px;
+  top: -55px;
+  left: 0;
+  border-radius: 30px;
+  z-index: -1;
+} 
+
+
+.swiper-wrapper img{
+ width: 100%;
+ border-radius: 30px;
+} 
+
+.swiper-slide .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffe600;
+  z-index: 1;
+}
+
+.swiper-slide .subtitle {
+  font-size: 2rem;
+}
+
+.swiper-slide .text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1;
+}
+.swiper_text .btn{
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  background-color: #ffe600;
+  border-radius: 10px;
+  margin-bottom: -100px;
+  transition: 0.5s;
+  font-weight: 800;
+  cursor: pointer;
+  z-index: 999;
+}
+
+
+/* 미니 프로젝트 */
+
+
+/* 박스크기 있을 곳 */
+
+/* 버튼 박스 */
+.btn_Box {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.swiper_text .btn:hover{
+  color: #ffe600;
+  background-color: black;
+}
+
+
+/* 프로젝트 모달창 */
+
+.modal {
+  /* display: none;  */
+  position: absolute;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  left: -30%;
+  top: 5%;
+  opacity: 0;
+  background-color: rgba(22, 22, 22, 0.336);
+  transition: 0.8s;
+}
+/* Modal Content/Box */
+.modal-content {
+  width: 1100px;
+  height: 800px; 
+  position: fixed;
+  z-index: 99;
+  top: -25%;
+  left: 0%;
+  transform: translate(50%, 50%);
+  background-color: #353535;
+  color: black;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #888;
+}
+/* The Close Button */
+.close {
+  color: #ffe600;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 999;
+}
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active {
+  background-color: black;
+}
+
+/* 프로젝트 모달창 내용 */
+
+.modal_heading {
+  border-bottom: 1px solid #ffe60062;
+}
+
+/* 
+.modal_heading::after{
+  content: '';
+  position: absolute;
+  background: url(../img/mockup/modal_big.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 700px;
+  top: 100px;
+  left: 50px;
+  height: 500px;
+  z-index: -1;
+}
+.modal_heading::before{
+  content: '';
+  position: absolute;
+  background: url(../img/mockup/modal_small.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  bottom: -250px;
+  left: 650px;
+  height: 500px;
+  z-index: -1;
+} */
+
+
+.modal_heading h1 {
+  color: #ffe600;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+/* 모달 컨텐츠 부분  */
+.modal_content {
+  margin-top: 50px;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* 컨텐츠 왼쪽 */
+.modal_contentL {
+  width: 60%;
+}
+.modal_contentL img {
+  width: 90%;
+  margin-top: 80px;
+}
+
+/* 컨텐츠 오른쪽 */
+.modal_contentR {
+  width: 40%;
+
+}
+.modal_contentR h2 {
+  padding: 1rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.modal_contentR ul {
+  text-align: left;
+  margin-top: 0px;
+}
+
+
+.modal_contentR ul li {
+  padding:3rem 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.modal_contentR  ul li p{
+  color: #ffe600;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+
+/* 컨텐츠 버튼영역 */
+.modal_button {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+
+}
+.modal_button button {
+  padding:  0 1.5rem;
+  background-color: #ffe600;
+  margin: 10px 50px;
+  border-radius: 10px;
+}
+.modal_button button a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-weight: 800;
+  color: #313131;
+  z-index: 999;
+  text-transform:uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .Project{
+    margin:  auto;
+  }
+  .Project_section {
+    border: 1px solid #00000000;
+    height: 100%;
+    color: #ffe600;
+    position: relative;
+  }
+
+  .Project_heading {
+    margin: 10vh auto;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    font-size: 50px;
+  }
+
+  .Project_box {
+    width: 100%;
+    display: grid;
+    margin: auto;
+  }
+  
+
+    .swiper {
+      width: 50vh;
+      height:60vh;
+ 
+    }
+    
+    .swiper-slide {
+      font-size: 18px;
+      color: #fff;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 3rem;
+      width: 100%;
+      border-radius: 30px;
+    }
+    
+    .parallax-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    
+    .swiper-slide{
+    }
+    
+    /* 스와이퍼 텍스트 */
+    .swiper_text{
+      position: absolute;
+      top: 100px;
+      color: black;
+      width: 300px;
+      text-align: center;
+      line-height: 4;
+      color: white;
+      z-index: 1;
+    }
+    
+    .swiper_text::after{
+      content: '';
+      background-color: #00000079;
+      width: 100%;
+      position: absolute;
+      height: 500px;
+      top: -55px;
+      left: 0;
+      border-radius: 30px 0 0 30px;
+      z-index: -1;
+    } 
+    
+    
+    .swiper-wrapper img{
+     width: 100%;
+     height: 70%;
+     border-radius: 30px;
+    } 
+    
+    .swiper-slide .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffe600;
+      z-index: 1;
+    }
+    
+    .swiper-slide .subtitle {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    
+    .swiper-slide .text {
+      font-size: 14px;
+      max-width: 400px;
+      line-height: 2;
+      color: #dfdfdf;
+    }
+    .swiper_text .btn{
+      font-size: 0.8rem;
+      padding: 1rem 1rem;
+      background-color: #ffe600;
+      border-radius: 10px;
+      margin-bottom: -100px;
+      transition: 0.5s;
+      font-weight: 800;
+      cursor: pointer;
+      z-index: 999;
+      margin-left: 20%;
+    }
+    
+
+
+  .btn_Box button {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background-color: #ffe600;
+    border-radius: 10px;
+    margin-bottom: -100px;
+    transition: 0.5s;
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+
+  /* 프로젝트 모달창 */
+
+  .modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%; 
+    top:0;
+    z-index: -1; 
+    background-color: rgba(0, 0, 0, 0); /
+  }
+  /* Modal Content/Box */
+  .modal-content {
+    width: 80%; /* Full width */
+    height: 80%; /* Full height */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #313131;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #888; /* Could be more or less, depending on screen size */
+  }
+  /* The Close Button */
+  .close {
+    color: #ffe600;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: black;
+  }
+
+  /* 프로젝트 모달창 내용 */
+
+  .modal_heading {
+    border-bottom: 1px solid #ffe600;
+  }
+  .modal_heading h1 {
+    color: #ffe600;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  /* 모달 컨텐츠 부분  */
+  .modal_content {
+    margin-top: 0vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* 컨텐츠 왼쪽 */
+  .modal_contentL {
+    width: 100%;
+  }
+  .modal_contentL img {
+    width: 70%;
+    margin-top: 0;
+  }
+  
+  /* 컨텐츠 오른쪽 */
+  .modal_contentR {
+    width: 100%;
+  }
+  .modal_contentR h2 {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+
+  }
+  .modal_contentR ul {
+    border: 1px solid #ffe60000;
+    text-align: left;
+    margin-top: 10%;
+  }
+  .modal_contentR ul li p {
+    font-size: 1rem;
+  }
+  .modal_contentR ul li {
+    padding: 0rem;
+    color: #ffffff;
+    font-size: 0.8rem;
+    width: 100%;
+    margin-bottom: 1vh;
+
+  }
+
+  /* 컨텐츠 버튼영역 */
+  .modal_button {
+    margin-top: 10px;
+    display: flex;
+  }
+  .modal_button button {
+    padding: 0 1rem;
+    width: 100%;
+    background-color: #ffe600;
+    margin: 1vh;
+    border-radius: 10px;
+  }
+  .modal_button button a {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #313131;
+  }
+
+  
+.modal_heading::after{
+  content: '';
+  position: absolute;
+  background: url(../img/mockup/modal_big.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50vh;
+  top: 100px;
+  left: -5vh;
+  height: 500px;
+  z-index: -1;
+}
+.modal_heading::before{
+  display: none;
+  content: '';
+  position: absolute;
+  background: url(../img/mockup/modal_small.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  bottom: -250px;
+  left: 650px;
+  height: 500px;
+  z-index: -1;
+}
+}
+
+
+/*
+.box01 {
+  grid-area: box01;
+  height: 240px;
+  position: relative;
+ 
+}
+.box01::after {
+  content: "Project01";
+  font-weight: 800;
+  font-size: 2rem;
+  position: absolute;
+  top: 30%;
+  left: 32%;
+  display: none;
+}
+
+.box01 img{
+  width: 100%;
+}
+
+.box01:hover.box01::after {
+  display: block;
+}
+
+
+.box02 {
+  grid-area: box02;
+  height: 350px;
+}
+.box02::after {
+  content: "Project02";
+  font-weight: 800;
+  font-size: 2rem;
+  position: absolute;
+  top: 30%;
+  left: 32%;
+  display: none;
+}
+
+.box02:hover.box02::after {
+  display: block;
+}
+
+.box03 {
+  grid-area: box03;
+  height: 501px;
+}
+.box03 a img {
+  height: 501px;
+}
+
+.box03::after {
+  content: "Project03";
+  font-weight: 800;
+  font-size: 2rem;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  display: none;
+}
+
+.box03:hover.box03::after {
+  display: block;
+}
+
+.box04 {
+  grid-area: box04;
+  height: 510px;
+  margin-top: -260px;
+}
+.box04 a img {
+  height: 510px;
+  margin-left: 0px;
+}
+
+.box04::after {
+  content: "Project04";
+  font-weight: 800;
+  font-size: 2rem;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  display: none;
+}
+
+.box04:hover.box04::after {
+  display: block;
+}
+
+.box05 {
+  grid-area: box05;
+  height: 400px;
+  margin-top: -150px;
+}
+
+.box05 a img {
+  height: 400px;
+}
+
+.box05::after {
+  content: "Project05";
+  font-weight: 800;
+  font-size: 2rem;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  display: none;
+}
+
+.box05:hover.box05::after {
+  display: block;
+}
+
+.box06 {
+  grid-area: box06;
+  height: 245px;
+}
+.box06 a img{
+  width: 100%;
+  height: 245px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box06::after {
+  content: "Project06";
+  font-weight: 800;
+  font-size: 2rem;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  display: none;
+}
+
+.box06:hover.box06::after {
+  display: block;
+} 
+ */
+ 

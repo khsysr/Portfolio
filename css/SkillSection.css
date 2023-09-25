@@ -1,0 +1,175 @@
+.Skill_section {
+  border: 1px solid #ffffff00;
+  height: 1041px;
+  /* background-color: #313131; */
+  color: #ffe600;
+}
+
+.Skill {
+  margin: 50px auto auto 50px;
+}
+.Skill_heading {
+  width: 1100px;
+  margin: auto auto;
+  font-size: 60px;
+}
+
+.Skill_heading h1 {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+/* 스킬 콘텐츠 이미지/내용 */
+.Skill_cotent {
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+  height: auto;
+  margin-left: 100px;
+  /*   border: 1px solid #ffe600; */
+}
+
+.Skill_cotent ul {
+  display: flex;
+  justify-content: space-around;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.Skill_cotent ul li {
+  padding: 1rem;
+}
+
+.Skill_cotent ul li img {
+  animation: ani 2s infinite alternate;
+}
+
+/*스킬 이름 */
+.skillName {
+  font-size: 1.5rem;
+}
+
+@keyframes ani {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(10px, 0px);
+  }
+}
+
+/* skill 텍스트 구간 */
+.Skill_text {
+  overflow: hidden;
+  transition: 0.5s;
+  width: 300px;
+  margin-top: 50px;
+  text-align: left;
+
+}
+.Skill_text p {
+  overflow: hidden;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: -200px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.6s;
+  width: 100%;
+  background-color: black;
+  line-height: 1.5;
+  border-radius: 15px;
+  padding: 0.1rem;
+}
+
+.Skill_cotent ul li:hover .Skill_text p {
+  margin-bottom: 20px;
+}
+
+.Skill_cotent ul li img:hover {
+  transform: scale(-50%);
+}
+
+@media screen and (max-width: 767px) {
+  .Skill {
+    margin: auto;
+  }
+  .Skill_section {
+    border: 1px solid #ffffff00;
+    height: 100%;
+    color: #ffe600;
+  }
+  .Skill_heading {
+    margin: 15vh auto;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    font-size: 50px;
+  }
+
+  /* 스킬 콘텐츠 이미지/내용 */
+  .Skill_cotent {
+    margin-left: 0px;
+    margin-top: 60px;
+    height: auto;
+    width: 100%;
+  }
+
+  .Skill_cotent ul {
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .Skill_cotent ul li {
+    padding: 0rem;
+  }
+
+  .Skill_cotent ul li img {
+    width: 70%;
+    animation: ani 2s infinite alternate;
+  }
+
+  @keyframes ani {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(10px, 0px);
+    }
+  }
+
+  /* skill 텍스트 구간 */
+  .Skill_text {
+    display: none;
+    transition: 0.5s;
+    margin-top: 50px;
+  }
+  .Skill_text p {
+    color: white;
+    margin-bottom: -20vh;
+    font-size: 8px;
+    font-weight: bold;
+    transition: 0.6s;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .Skill_cotent ul li:hover .Skill_text p {
+    margin-bottom: 20px;
+  }
+
+  .Skill_cotent ul li img:hover {
+    transform: scale(-50%);
+  }
+
+  /*스킬 이름 */
+  .skillName {
+    font-size: 1rem;
+  }
+}
