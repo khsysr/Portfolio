@@ -246,6 +246,7 @@
   color: #ffe600;
   font-size: 2rem;
   padding: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* 모달 컨텐츠 부분  */
@@ -270,6 +271,7 @@
 /* 컨텐츠 오른쪽 */
 .modal_contentR {
   width: 40%;
+  margin-top: 50px;
 
 }
 .modal_contentR h2 {
@@ -277,15 +279,17 @@
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: bold;
+  text-align: left;
 }
 .modal_contentR ul {
   text-align: left;
-  margin-top: 0px;
+  margin-top: 70px;
+
 }
 
 
 .modal_contentR ul li {
-  padding:3rem 0rem;
+  padding:1rem 0rem;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -298,7 +302,7 @@
 
 .modal_contentR  ul li p{
   color: #ffe600;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-right: 20px;
 }
@@ -306,7 +310,7 @@
 
 /* 컨텐츠 버튼영역 */
 .modal_button {
-  margin-top: 0px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 
@@ -321,10 +325,21 @@
   font-size: 1.6rem;
   font-weight: bold;
   font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
   color: #313131;
   z-index: 999;
   text-transform:uppercase;
 }
+
+.modal_button button:hover{
+
+  background-color: black;
+}
+.modal_button button a:hover{
+  color: #ffe600;
+}
+
+
 
 @media screen and (max-width: 767px) {
   .Project{
@@ -351,7 +366,6 @@
     margin: auto;
   }
   
-
     .swiper {
       width: 50vh;
       height:60vh;
@@ -566,7 +580,7 @@
     display: flex;
   }
   .modal_button button {
-    padding: 0 1rem;
+    padding: 0.5rem 2rem;
     width: 100%;
     background-color: #ffe600;
     margin: 1vh;

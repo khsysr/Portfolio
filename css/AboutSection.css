@@ -79,17 +79,16 @@
   font-weight: bold;
 }
 
-.CAREER{
+.CAREER {
   color: #ffe600;
 }
 
-.LICENSE H3{
+.LICENSE H3 {
   width: 600px;
   font-size: 1.1rem;
   padding: 1.5rem 0rem;
   font-weight: bold;
   color: #ffe600;
-
 }
 
 .span_container {
@@ -140,6 +139,21 @@
 
 .About_right ul li {
   width: 100%;
+}
+
+.number {
+  animation: blink;
+  -webkit-animation: blink 3s linear infinite;
+}
+
+@keyframes blink {
+  /*0% 부터 100% 까지*/
+  0% {
+    color: #f6f9fa;
+  }
+  100% {
+    color: #ffe600;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -193,7 +207,6 @@
     margin-top: -80px;
     text-align: center;
     padding: 0;
-   
   }
 
   .About_head h2 {
@@ -203,7 +216,6 @@
     text-align: center;
     width: 100%;
     line-height: 1.5;
-
   }
 
   .About_text {
@@ -215,7 +227,7 @@
     margin: auto;
   }
 
-  .LICENSE h3{
+  .LICENSE h3 {
     font-size: 0.8rem;
     width: 100%;
   }
@@ -239,5 +251,8 @@
     font-size: 1.3rem;
     width: 80%;
     padding: 0rem;
+  }
+  .number {
+    -webkit-animation: blink 0s linear infinite;
   }
 }

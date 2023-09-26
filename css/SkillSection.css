@@ -67,7 +67,6 @@
   width: 300px;
   margin-top: 50px;
   text-align: left;
-
 }
 .Skill_text p {
   overflow: hidden;
@@ -81,7 +80,6 @@
   background-color: black;
   line-height: 1.5;
   border-radius: 15px;
-  padding: 0.1rem;
 }
 
 .Skill_cotent ul li:hover .Skill_text p {
